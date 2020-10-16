@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semáforo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Semáforo</h1>
+        <span class="modo">Modo Manual Activado</span>
+
+        <div class="semaforo">
+            <div class="luz red"></div>
+
+            <div class="luz yellow"></div>
+
+            <div class="luz green"></div>
+        </div>
+
+        <div class="botones">
+            <button onclick="cambiarModo(0)">Modo Manual</button>
+            <button onclick="cambiarModo(1)">Modo Automático</button>
+        </div>
+        
+        <div class="botones">
+            <button id="color" onclick="cambiarEstado()">Cambiar Color</button>
+            <button onclick="apagar()">Apagar</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
